@@ -1,0 +1,18 @@
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\PLC 1.exe.config
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\PLC 1.exe
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\PLC 1.pdb
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\NModbus4.dll
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\NModbus4.xml
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.csproj.AssemblyReference.cache
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC_1.Form1.resources
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC_1.Properties.Resources.resources
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.csproj.GenerateResource.cache
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.csproj.CoreCompileInputs.cache
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.csproj.CopyComplete
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.exe
+C:\Users\G3\source\repos\PLC 1\PLC 1\obj\Debug\PLC 1.pdb
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\EntityFramework.dll
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\EntityFramework.xml
+C:\Users\G3\source\repos\PLC 1\PLC 1\bin\Debug\EntityFramework.SqlServer.xml

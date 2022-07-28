@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="base1Model1StoreContainer" CdmEntityContainer="baseEn">
+    <EntitySetMapping Name="inicio">
+      <EntityTypeMapping TypeName="base1Model1.inicio">
+        <MappingFragment StoreEntitySet="inicio">
+          <ScalarProperty Name="di" ColumnName="di" />
+          <ScalarProperty Name="inicio1" ColumnName="inicio" />
+          <ScalarProperty Name="apagado" ColumnName="apagado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

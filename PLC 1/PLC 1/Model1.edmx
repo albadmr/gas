@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="base1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="gasolina">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tag" Type="int" Nullable="false" />
+          <Property Name="Litros" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Densidad" Type="float" Nullable="false" />
+          <Property Name="Temperatura" Type="float" Nullable="false" />
+          <Property Name="Flujo" Type="float" Nullable="false" />
+          <Property Name="Totalizado" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Fecha de  inicio" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fecha de terminio" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="base1ModelStoreContainer">
+          <EntitySet Name="gasolina" EntityType="Self.gasolina" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="base1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="gasolina">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tag" Type="Int32" Nullable="false" />
+          <Property Name="Litros" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Densidad" Type="Double" Nullable="false" />
+          <Property Name="Temperatura" Type="Double" Nullable="false" />
+          <Property Name="Flujo" Type="Double" Nullable="false" />
+          <Property Name="Totalizado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Fecha_de__inicio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fecha_de_terminio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="be" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="gasolina" EntityType="Self.gasolina" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="base1ModelStoreContainer" CdmEntityContainer="be">
+          <EntitySetMapping Name="gasolina">
+            <EntityTypeMapping TypeName="base1Model.gasolina">
+              <MappingFragment StoreEntitySet="gasolina">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tag" ColumnName="Tag" />
+                <ScalarProperty Name="Litros" ColumnName="Litros" />
+                <ScalarProperty Name="Densidad" ColumnName="Densidad" />
+                <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
+                <ScalarProperty Name="Flujo" ColumnName="Flujo" />
+                <ScalarProperty Name="Totalizado" ColumnName="Totalizado" />
+                <ScalarProperty Name="Fecha_de__inicio" ColumnName="Fecha de  inicio" />
+                <ScalarProperty Name="Fecha_de_terminio" ColumnName="Fecha de terminio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

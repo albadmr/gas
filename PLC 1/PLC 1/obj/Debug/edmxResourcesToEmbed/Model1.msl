@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="base1ModelStoreContainer" CdmEntityContainer="be">
+    <EntitySetMapping Name="gasolina">
+      <EntityTypeMapping TypeName="base1Model.gasolina">
+        <MappingFragment StoreEntitySet="gasolina">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Litros" ColumnName="Litros" />
+          <ScalarProperty Name="Densidad" ColumnName="Densidad" />
+          <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
+          <ScalarProperty Name="Flujo" ColumnName="Flujo" />
+          <ScalarProperty Name="Totalizado" ColumnName="Totalizado" />
+          <ScalarProperty Name="Fecha_de__inicio" ColumnName="Fecha de  inicio" />
+          <ScalarProperty Name="Fecha_de_terminio" ColumnName="Fecha de terminio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="base1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="gasolina">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tag" Type="int" Nullable="false" />
+    <Property Name="Litros" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Densidad" Type="float" Nullable="false" />
+    <Property Name="Temperatura" Type="float" Nullable="false" />
+    <Property Name="Flujo" Type="float" Nullable="false" />
+    <Property Name="Totalizado" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha de  inicio" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fecha de terminio" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="base1ModelStoreContainer">
+    <EntitySet Name="gasolina" EntityType="Self.gasolina" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

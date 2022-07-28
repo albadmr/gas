@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="base1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="gasolina">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tag" Type="Int32" Nullable="false" />
+    <Property Name="Litros" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Densidad" Type="Double" Nullable="false" />
+    <Property Name="Temperatura" Type="Double" Nullable="false" />
+    <Property Name="Flujo" Type="Double" Nullable="false" />
+    <Property Name="Totalizado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fecha_de__inicio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fecha_de_terminio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="be" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gasolina" EntityType="Self.gasolina" />
+  </EntityContainer>
+</Schema>
